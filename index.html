@@ -5,49 +5,221 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy – Njemački kroz priče</title>
   <style>
-    body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
-    h1 { color: #E8622A; }
-    h2 { margin-top: 32px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; color: #222; line-height: 1.7; background: #fafafa; }
+    h1 { color: #E8622A; font-size: 28px; margin-bottom: 4px; }
+    .subtitle { color: #888; font-size: 14px; margin-bottom: 28px; }
+    h2 { font-size: 17px; margin-top: 28px; margin-bottom: 8px; color: #1A1A2E; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    a { color: #E8622A; }
+    .lang-bar { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+    .lang-btn { padding: 6px 16px; border-radius: 20px; border: 2px solid #E8622A; background: white; color: #E8622A; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+    .lang-btn.active { background: #E8622A; color: white; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: April 17, 2026</p>
 
-  <p>Njemački kroz priče ("we", "our", "us") is committed to protecting your privacy. This policy explains what data we collect and how we use it.</p>
+  <h1>🇩🇪 Njemački kroz priče</h1>
+  <p class="subtitle">Privacy Policy</p>
 
-  <h2>Data We Collect</h2>
-  <ul>
-    <li>Email address (for account creation)</li>
-    <li>Learning progress (stories read, words learned, streak)</li>
-    <li>App usage analytics (anonymized, via Mixpanel)</li>
-    <li>Push notification token (for reminders)</li>
-    <li>Subscription status (via RevenueCat)</li>
-    <li>Crash reports (via Sentry)</li>
-  </ul>
+  <div class="lang-bar">
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('de')">DE</button>
+    <button class="lang-btn" onclick="setLang('hr')">HR</button>
+    <button class="lang-btn" onclick="setLang('bs')">BS</button>
+  </div>
 
-  <h2>How We Use Your Data</h2>
-  <ul>
-    <li>To provide and improve the app</li>
-    <li>To send learning reminders (push notifications)</li>
-    <li>To manage your subscription</li>
-    <li>To fix bugs and crashes</li>
-  </ul>
+  <!-- ENGLISH -->
+  <div class="lang-section active" id="lang-en">
+    <p><em>Last updated: April 17, 2026</em></p>
+    <p style="margin-top:12px">Njemački kroz priče ("we", "our", "us") is committed to protecting your privacy.</p>
 
-  <h2>Third-Party Services</h2>
-  <ul>
-    <li><strong>Supabase</strong> – database and authentication</li>
-    <li><strong>RevenueCat</strong> – subscription management</li>
-    <li><strong>Mixpanel</strong> – anonymized analytics</li>
-    <li><strong>Sentry</strong> – crash reporting</li>
-    <li><strong>Expo / Firebase</strong> – push notifications</li>
-    <li><strong>Resend</strong> – email notifications</li>
-  </ul>
+    <h2>Data We Collect</h2>
+    <ul>
+      <li>Email address (for account creation)</li>
+      <li>First and last name (optional)</li>
+      <li>Learning progress (stories read, words learned, streak)</li>
+      <li>App usage analytics (anonymized via Mixpanel)</li>
+      <li>Push notification token (for learning reminders)</li>
+      <li>Subscription status (via RevenueCat)</li>
+      <li>Crash reports (via Sentry)</li>
+    </ul>
 
-  <h2>Data Retention</h2>
-  <p>Your data is retained as long as your account is active. You can delete your account at any time from the app (Profile → Delete account), which permanently removes all your data.</p>
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>To provide and improve the app</li>
+      <li>To send learning reminders (push notifications)</li>
+      <li>To manage your subscription</li>
+      <li>To fix bugs and crashes</li>
+      <li>To send new story and weekly summary emails (you can unsubscribe)</li>
+    </ul>
 
-  <h2>Contact</h2>
-  <p>For any privacy questions, contact us at: <a href="mailto:njemackikrozprice@gmail.com">njemackikrozprice@gmail.com</a></p>
+    <h2>Third-Party Services</h2>
+    <ul>
+      <li><strong>Supabase</strong> – database and authentication</li>
+      <li><strong>RevenueCat</strong> – subscription management</li>
+      <li><strong>Mixpanel</strong> – anonymized analytics (EU servers)</li>
+      <li><strong>Sentry</strong> – crash reporting</li>
+      <li><strong>Expo / Firebase</strong> – push notifications</li>
+      <li><strong>Resend</strong> – email notifications</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <p>Your data is retained as long as your account is active. You can delete your account at any time from the app (Profile → Delete account), which permanently removes all your data.</p>
+
+    <h2>Your Rights (GDPR)</h2>
+    <p>You have the right to access, correct, or delete your personal data at any time. Contact us to exercise these rights.</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:njemackikrozprice@gmail.com">njemackikrozprice@gmail.com</a></p>
+  </div>
+
+  <!-- DEUTSCH -->
+  <div class="lang-section" id="lang-de">
+    <p><em>Zuletzt aktualisiert: 17. April 2026</em></p>
+    <p style="margin-top:12px">Njemački kroz priče ("wir") verpflichtet sich zum Schutz Ihrer Privatsphäre.</p>
+
+    <h2>Erhobene Daten</h2>
+    <ul>
+      <li>E-Mail-Adresse (zur Kontoerstellung)</li>
+      <li>Vor- und Nachname (optional)</li>
+      <li>Lernfortschritt (gelesene Geschichten, gelernte Wörter, Streak)</li>
+      <li>App-Nutzungsanalysen (anonymisiert über Mixpanel)</li>
+      <li>Push-Benachrichtigungs-Token (für Lern-Erinnerungen)</li>
+      <li>Abonnementstatus (über RevenueCat)</li>
+      <li>Absturzberichte (über Sentry)</li>
+    </ul>
+
+    <h2>Verwendung Ihrer Daten</h2>
+    <ul>
+      <li>Bereitstellung und Verbesserung der App</li>
+      <li>Versand von Lern-Erinnerungen (Push-Benachrichtigungen)</li>
+      <li>Verwaltung Ihres Abonnements</li>
+      <li>Behebung von Fehlern und Abstürzen</li>
+      <li>Versand von E-Mails zu neuen Geschichten und Wochenzusammenfassungen (abbestellbar)</li>
+    </ul>
+
+    <h2>Drittanbieter</h2>
+    <ul>
+      <li><strong>Supabase</strong> – Datenbank und Authentifizierung</li>
+      <li><strong>RevenueCat</strong> – Abonnementverwaltung</li>
+      <li><strong>Mixpanel</strong> – anonymisierte Analysen (EU-Server)</li>
+      <li><strong>Sentry</strong> – Absturzberichte</li>
+      <li><strong>Expo / Firebase</strong> – Push-Benachrichtigungen</li>
+      <li><strong>Resend</strong> – E-Mail-Benachrichtigungen</li>
+    </ul>
+
+    <h2>Datenspeicherung</h2>
+    <p>Ihre Daten werden gespeichert, solange Ihr Konto aktiv ist. Sie können Ihr Konto jederzeit in der App löschen (Profil → Konto löschen).</p>
+
+    <h2>Ihre Rechte (DSGVO)</h2>
+    <p>Sie haben das Recht, jederzeit auf Ihre personenbezogenen Daten zuzugreifen, sie zu korrigieren oder zu löschen.</p>
+
+    <h2>Kontakt</h2>
+    <p>E-Mail: <a href="mailto:njemackikrozprice@gmail.com">njemackikrozprice@gmail.com</a></p>
+  </div>
+
+  <!-- HRVATSKI -->
+  <div class="lang-section" id="lang-hr">
+    <p><em>Zadnje ažuriranje: 17. travnja 2026.</em></p>
+    <p style="margin-top:12px">Njemački kroz priče ("mi") posvećeni smo zaštiti vaše privatnosti.</p>
+
+    <h2>Podaci koje prikupljamo</h2>
+    <ul>
+      <li>E-mail adresa (za kreiranje računa)</li>
+      <li>Ime i prezime (opcionalno)</li>
+      <li>Napredak u učenju (pročitane priče, naučene riječi, streak)</li>
+      <li>Analitika korištenja aplikacije (anonimizirano putem Mixpanel)</li>
+      <li>Token za push obavijesti (za podsjetnike)</li>
+      <li>Status pretplate (putem RevenueCat)</li>
+      <li>Izvještaji o greškama (putem Sentry)</li>
+    </ul>
+
+    <h2>Kako koristimo vaše podatke</h2>
+    <ul>
+      <li>Za pružanje i poboljšanje aplikacije</li>
+      <li>Za slanje podsjetnika za učenje (push obavijesti)</li>
+      <li>Za upravljanje vašom pretplatom</li>
+      <li>Za ispravljanje grešaka i rušenja</li>
+      <li>Za slanje e-mailova o novim pričama i tjednim sažecima (možete se odjaviti)</li>
+    </ul>
+
+    <h2>Servisi trećih strana</h2>
+    <ul>
+      <li><strong>Supabase</strong> – baza podataka i autentifikacija</li>
+      <li><strong>RevenueCat</strong> – upravljanje pretplatom</li>
+      <li><strong>Mixpanel</strong> – anonimizirana analitika (EU serveri)</li>
+      <li><strong>Sentry</strong> – izvještaji o greškama</li>
+      <li><strong>Expo / Firebase</strong> – push obavijesti</li>
+      <li><strong>Resend</strong> – e-mail obavijesti</li>
+    </ul>
+
+    <h2>Čuvanje podataka</h2>
+    <p>Vaši podaci se čuvaju dok je vaš račun aktivan. Račun možete obrisati u bilo koje vrijeme unutar aplikacije (Profil → Obriši račun), čime se trajno brišu svi vaši podaci.</p>
+
+    <h2>Vaša prava (GDPR)</h2>
+    <p>Imate pravo u bilo koje vrijeme pristupiti, ispraviti ili obrisati svoje osobne podatke.</p>
+
+    <h2>Kontakt</h2>
+    <p>E-mail: <a href="mailto:njemackikrozprice@gmail.com">njemackikrozprice@gmail.com</a></p>
+  </div>
+
+  <!-- BOSANSKI -->
+  <div class="lang-section" id="lang-bs">
+    <p><em>Posljednje ažuriranje: 17. april 2026.</em></p>
+    <p style="margin-top:12px">Njemački kroz priče ("mi") posvećeni smo zaštiti vaše privatnosti.</p>
+
+    <h2>Podaci koje prikupljamo</h2>
+    <ul>
+      <li>E-mail adresa (za kreiranje naloga)</li>
+      <li>Ime i prezime (opcionalno)</li>
+      <li>Napredak u učenju (pročitane priče, naučene riječi, streak)</li>
+      <li>Analitika korištenja aplikacije (anonimizirano putem Mixpanel)</li>
+      <li>Token za push obavještenja (za podsjetnike)</li>
+      <li>Status pretplate (putem RevenueCat)</li>
+      <li>Izvještaji o greškama (putem Sentry)</li>
+    </ul>
+
+    <h2>Kako koristimo vaše podatke</h2>
+    <ul>
+      <li>Za pružanje i poboljšanje aplikacije</li>
+      <li>Za slanje podsjetnika za učenje (push obavještenja)</li>
+      <li>Za upravljanje vašom pretplatom</li>
+      <li>Za ispravljanje grešaka i padova</li>
+      <li>Za slanje e-mailova o novim pričama i sedmičnim sažecima (možete se odjaviti)</li>
+    </ul>
+
+    <h2>Servisi trećih strana</h2>
+    <ul>
+      <li><strong>Supabase</strong> – baza podataka i autentifikacija</li>
+      <li><strong>RevenueCat</strong> – upravljanje pretplatom</li>
+      <li><strong>Mixpanel</strong> – anonimizirana analitika (EU serveri)</li>
+      <li><strong>Sentry</strong> – izvještaji o greškama</li>
+      <li><strong>Expo / Firebase</strong> – push obavještenja</li>
+      <li><strong>Resend</strong> – e-mail obavještenja</li>
+    </ul>
+
+    <h2>Čuvanje podataka</h2>
+    <p>Vaši podaci se čuvaju dok je vaš nalog aktivan. Nalog možete obrisati u bilo koje vrijeme unutar aplikacije (Profil → Obriši nalog), čime se trajno brišu svi vaši podaci.</p>
+
+    <h2>Vaša prava (GDPR)</h2>
+    <p>Imate pravo u bilo koje vrijeme pristupiti, ispraviti ili obrisati svoje lične podatke.</p>
+
+    <h2>Kontakt</h2>
+    <p>E-mail: <a href="mailto:njemackikrozprice@gmail.com">njemackikrozprice@gmail.com</a></p>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
 </body>
 </html>
